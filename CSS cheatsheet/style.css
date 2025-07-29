@@ -1,0 +1,102 @@
+/* *{ RESETting the page's marg and padd
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    background-color: #f5f5f5;
+    color: #555;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+   /* font: 16px arial, helvetica, sans-serif normal; */
+    line-height: 1.6em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: aqua;
+}
+
+a:visited{
+    color: black;
+}
+
+.container{
+    width: 80%; /*use % on containers to make it responsive*/
+    margin: auto; /*sets auto even margin(spacing around an element) on all sides */
+}
+
+.box-1{
+    background-color: #333;
+    color: #fff; /*text color*/
+   /* border-right: 5px red solid;
+    border-left: 5px blue solid;
+    border-top: 5px green solid;
+    border-bottom: 5px yellow solid; */
+    
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted; /*above gets overwritten by next line*/
+
+    border: 5px red solid;
+
+    padding: 20px; /*can be oadding-left/right/bottom/top*/
+
+    margin-top: 20px; /*space outside border. BOX MODEL: content->padding->border->margin*/
+    margin:20px 0; /*tt&b gets 20 r&l gets 0*/
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2{
+    border: 3px dotted #ccc;
+    padding:20px;
+    margin: 20px 0;
+}
+
+.categories{
+    border: 2px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+      text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #333;
+   /* list-style-image: url('./images/brah.jpg'); */ /*to create bullet point from desired image*/
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
