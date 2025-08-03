@@ -27,13 +27,30 @@ a:active{
     color: aqua;
 }
 
-a:visited{
+/*a:visited{
     color: black;
-}
+}*/
 
 .container{
     width: 80%; /*use % on containers to make it responsive*/
     margin: auto; /*sets auto even margin(spacing around an element) on all sides */
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+.clr{
+    clear:both; /*clears any floats(class block) above it*/
 }
 
 .box-1{
@@ -99,4 +116,82 @@ a:visited{
 
 .my-form .form-group{
     padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.block{ /*floating h3s side by side*/
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; /*takes padding+border into width*/
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+     padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('./images/images.jfif'); /*image as backgrond*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 800px 500px;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{ /*sudo class*/
+    background: red;
+}
+
+.my-list li:last-child{ /*sudo class*/
+    background: blue;
+}
+
+.my-list li:nth-child(5){ /*sudo class*/
+    background: yellow;
+}
+
+.my-list li:nth-child(even){ /*sudo class*/
+    background: green;
 }
