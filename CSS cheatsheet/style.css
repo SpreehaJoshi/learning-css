@@ -180,18 +180,18 @@ a:active{
     top: 400px;
 }
 
-.my-list li:first-child{ /*sudo class*/
+.my-list li:first-child{ /*pseudo class*/
     background: red;
 }
 
-.my-list li:last-child{ /*sudo class*/
+.my-list li:last-child{ /*pseudo class*/
     background: blue;
 }
 
-.my-list li:nth-child(5){ /*sudo class*/
+.my-list li:nth-child(5){ /*pseudo class*/
     background: yellow;
 }
 
-.my-list li:nth-child(even){ /*sudo class*/
+.my-list li:nth-child(even){ /*pseudo class*/
     background: green;
 }
